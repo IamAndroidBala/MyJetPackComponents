@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MyJetPackComponent</string>
+    <string name="welcome"> Welcome</string>
+    <string name="livedata"> LiveData &amp; ROOM</string>
+    <string name="add_word">Add word</string>
+    <string name="enter_word">Enter a word</string>
+    <string name="add_new_words"> Add a new word</string>
 </resources>

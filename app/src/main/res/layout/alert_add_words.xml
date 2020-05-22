@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_padding"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/tvHeading"
+        android:gravity="center"
+        android:hint="@string/add_new_words"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_title"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:hint="@string/enter_word"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_content"
+        android:id="@+id/edNewWord"
+        app:layout_constraintTop_toBottomOf="@id/tvHeading"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/btnAdd"
+        android:hint="@string/add_new_words"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_content"
+        app:layout_constraintTop_toBottomOf="@id/edNewWord"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
