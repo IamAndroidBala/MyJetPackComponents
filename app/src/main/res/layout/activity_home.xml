@@ -13,8 +13,35 @@
         android:textSize="@dimen/text_title"
         android:text="@string/livedata"
         android:id="@+id/tvLiveData"
+        android:padding="@dimen/common_padding"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_title"
+        android:text="@string/data_bind"
+        android:id="@+id/tvDataBinding"
+        android:padding="@dimen/common_padding"
+        app:layout_constraintTop_toBottomOf="@+id/tvLiveData"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_title"
+        android:text="@string/coroutine"
+        android:id="@+id/tvCoroutine"
+        android:padding="@dimen/common_padding"
+        app:layout_constraintTop_toBottomOf="@+id/tvDataBinding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

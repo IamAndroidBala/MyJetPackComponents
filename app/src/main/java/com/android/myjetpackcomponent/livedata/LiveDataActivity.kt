@@ -16,12 +16,11 @@ import com.android.myjetpackcomponent.livedata.viewmodel.WordViewModel
 import com.android.myjetpackcomponent.views.BaseActivity
 import kotlinx.android.synthetic.main.activity_livedata.*
 
-
 class LiveDataActivity : BaseActivity() {
 
     private val newWordActivityRequestCode = 1
-    private lateinit var wordAdapter : WordAdapter
-    private lateinit var wordViewModel: WordViewModel
+    private lateinit var wordAdapter   : WordAdapter
+    private lateinit var wordViewModel : WordViewModel
 
     override fun contentView() = R.layout.activity_livedata
 

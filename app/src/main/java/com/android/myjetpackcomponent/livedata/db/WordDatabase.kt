@@ -60,14 +60,13 @@ abstract class WordDatabase : RoomDatabase() {
          * If you want to start with more words, just add them.
          */
         fun populateDatabase(wordDao: WordDao) {
-            // Start the app with a clean database every time.
-            // Not needed if you only populate on creation.
-            wordDao.deleteAll()
 
-            var word = Word("Hello")
-            wordDao.insertWord(word)
-            word = Word("World!")
-            wordDao.insertWord(word)
+            //wordDao.deleteAll()
+
+//            var word = Word("Hello")
+//            wordDao.insertWord(word)
+//            word = Word("World!")
+//            wordDao.insertWord(word)
 
         }
 

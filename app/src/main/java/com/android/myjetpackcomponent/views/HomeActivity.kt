@@ -4,13 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.android.myjetpackcomponent.R
+import com.android.myjetpackcomponent.coroutines.CoroutineActivity
+import com.android.myjetpackcomponent.databinding.DataBindingActivity
 import com.android.myjetpackcomponent.livedata.LiveDataActivity
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : BaseActivity(), View.OnClickListener {
 
-    override fun contentView() =
-        R.layout.activity_home
+    override fun contentView() = R.layout.activity_home
 
     override fun setScreenTitle() = ""
 
@@ -18,6 +19,8 @@ class HomeActivity : BaseActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
 
         tvLiveData.setOnClickListener(this)
+        tvCoroutine.setOnClickListener(this)
+        tvDataBinding.setOnClickListener(this)
 
     }
 
@@ -29,6 +32,14 @@ class HomeActivity : BaseActivity(), View.OnClickListener {
 
             R.id.tvLiveData -> {
                 startActivity(Intent(this@HomeActivity, LiveDataActivity::class.java))
+            }
+
+            R.id.tvCoroutine -> {
+                startActivity(Intent(this@HomeActivity, CoroutineActivity::class.java))
+            }
+
+            R.id.tvDataBinding -> {
+                startActivity(Intent(this@HomeActivity, DataBindingActivity::class.java))
             }
 
         }
