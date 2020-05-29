@@ -40,24 +40,24 @@ class CoroutineActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
 
         coroutineScope.launch(Dispatchers.IO) {
+
             val originalBitmap = getOriginalBitmapAsync(getString(R.string.co_image))
 
             val snowFilterBitmap = loadSnowFilterAsync(originalBitmap)
 
             loadImage(snowFilterBitmap)
+
         }
 
     }
 
-    private suspend fun getOriginalBitmapAsync(url: String): Bitmap =
-        withContext(Dispatchers.IO) {
+    private suspend fun getOriginalBitmapAsync(url: String): Bitmap = withContext(Dispatchers.IO) {
             URL(url).openStream().use {
                 return@withContext BitmapFactory.decodeStream(it)
             }
         }
 
-    private suspend fun loadSnowFilterAsync(originalBitmap: Bitmap): Bitmap =
-        withContext(Dispatchers.Default) {
+    private suspend fun loadSnowFilterAsync(originalBitmap: Bitmap): Bitmap = withContext(Dispatchers.Default) {
             SnowFilter.applySnowEffect(originalBitmap)
         }
 
@@ -67,7 +67,6 @@ class CoroutineActivity : BaseActivity() {
             imageCorotine?.setImageBitmap(snowFilterBitmap)
         }
     }
-
 
     override fun toolbarBackPressed() {
         onBackPressed()

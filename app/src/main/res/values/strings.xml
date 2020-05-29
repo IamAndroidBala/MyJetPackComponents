@@ -8,4 +8,11 @@
     <string name="coroutine">Coroutine</string>
     <string name="data_bind">Data Binding</string>
     <string name="co_image">https://fsb.zobj.net/crop.php?r=GXrLO-3bmGrG7mK0ewwRYJQsyc0AJkx8xO3qFG5G7-f63AP5klmvIIL0f3T8ne5wSR64QJNMs0bSPgotAZmIp__tHtsZVITkFzZ-CjiCFubAag67tP-k1Q0y1PcGWiOU2Y7NnbRQIzhWsHiw</string>
+    <string name="add_item">Add new name</string>
+    <string name="edit_item">Edit name</string>
+    <string name="name"> Name</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
 </resources>
