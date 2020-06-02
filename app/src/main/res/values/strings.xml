@@ -14,5 +14,7 @@
     <string name="save">Save</string>
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
+    <string name="wmanager">Work Manager</string>
+    <string name="pagination"> Pagination</string>
 
 </resources>

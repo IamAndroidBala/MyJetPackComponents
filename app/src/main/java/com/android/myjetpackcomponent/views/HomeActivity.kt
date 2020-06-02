@@ -7,6 +7,7 @@ import com.android.myjetpackcomponent.R
 import com.android.myjetpackcomponent.coroutines.CoroutineActivity
 import com.android.myjetpackcomponent.databinding.DataBindingActivity
 import com.android.myjetpackcomponent.livedata.LiveDataActivity
+import com.android.myjetpackcomponent.workmanager.WorkManagerActivity
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : BaseActivity(), View.OnClickListener {
@@ -20,6 +21,7 @@ class HomeActivity : BaseActivity(), View.OnClickListener {
 
         tvLiveData.setOnClickListener(this)
         tvCoroutine.setOnClickListener(this)
+        tvWorkManager.setOnClickListener(this)
         tvDataBinding.setOnClickListener(this)
 
     }
@@ -40,6 +42,10 @@ class HomeActivity : BaseActivity(), View.OnClickListener {
 
             R.id.tvDataBinding -> {
                 startActivity(Intent(this@HomeActivity, DataBindingActivity::class.java))
+            }
+
+            R.id.tvWorkManager -> {
+                startActivity(Intent(this@HomeActivity, WorkManagerActivity::class.java))
             }
 
         }

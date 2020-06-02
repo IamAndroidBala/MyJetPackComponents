@@ -32,6 +32,8 @@
         <activity android:name=".databinding.DataBindingActivity"
             android:theme="@style/AppThemeTitle"/>
 
+        <activity android:name=".workmanager.WorkManagerActivity"
+            android:theme="@style/AppThemeTitle"/>
 
     </application>
 
